@@ -40,8 +40,8 @@ namespace CallRequestResponseService
                             "input1",
                             new StringTable()
                             {
-                                ColumnNames = new string[] {"MPG", "Cyl", "Displacement", "Horsepower", "Weight", "Acceleration", "Year", "CountryCode", "Model"},
-                                Values = new string[,] {  { "0", "0", "0", "0", "0", "0", "0", "0", "value" },  { "0", "0", "0", "0", "0", "0", "0", "0", "value" },  }
+                                ColumnNames = new string[] {"Recency", "Frequency", "Monetary", "Time", "Class"},
+                                Values = new string[,] {  { "0", "0", "0", "0", "0" },  { "0", "0", "0", "0", "0" },  }
                             }
                         },
                     },
@@ -49,10 +49,10 @@ namespace CallRequestResponseService
                     {
                     }
                 };
-                const string apiKey = "jVM012VhvJqhwKzusSjY9OrTkfAj7gUPxCt2iCB4zU83Sj1GhlRHBheqiM7HdXz4/HQyDdBn4rTnJ/BfSKLyMA=="; // Replace this with the API key for the web service
+                const string apiKey = "nys4zd/j1pZlbDBlCluNsnuNjy9Gi1XVDM7rCdFsnNzO7xwGMTgk9gGhNe0qyQLcnQ7SltAu2EawG+XVHxzMMQ=="; // Replace this with the API key for the web service
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", apiKey);
 
-                client.BaseAddress = new Uri("https://ussouthcentral.services.azureml.net/workspaces/ec49f5a890c249e78e499c9bc4984b27/services/0b9498df7305401b91890a6465fc9c0c/execute?api-version=2.0&details=true");
+                client.BaseAddress = new Uri("https://ussouthcentral.services.azureml.net/workspaces/ec49f5a890c249e78e499c9bc4984b27/services/a23cb27a25ca401989350f97afbe49c4/execute?api-version=2.0&details=true");
 
                 // WARNING: The 'await' statement below can result in a deadlock if you are calling this code from the UI thread of an ASP.Net application.
                 // One way to address this would be to call ConfigureAwait(false) so that the execution does not attempt to resume on the original context.
